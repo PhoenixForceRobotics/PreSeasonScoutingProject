@@ -13,7 +13,10 @@ public class Attendance {
     public Attendance(@NonNull String Student, String day, String month, String year, Boolean here) {
 
         this.Student = Student;
-        this.PassWord = PassWord;
+        this.day = day;
+        this.month =  month;
+        this.year = year;
+        this.here = here;
 
 
     }
@@ -26,10 +29,22 @@ public class Attendance {
         private String Student;
 
 
-        @ColumnInfo(name = "PassWord")
-        private String PassWord;
+        @ColumnInfo(name = "day")
+        private String day;
 
-        //for some reason having password be PriKey orders the data right.
+        @ColumnInfo(name = "month")
+        private String month;
+
+        @ColumnInfo(name = "year")
+        private String year;
+
+        @ColumnInfo(name = "here")
+        private Boolean here;
+
+
+
+
+    //for some reason having password be PriKey orders the data right.
 
 
         public String getStudent() {
@@ -41,11 +56,21 @@ public class Attendance {
         }
 
 
-        public String getPassWord() {return PassWord;}
+        public String getDay() {return day;}
 
-        public void setPassWord(String User) {this.PassWord = PassWord;}
+        public void setDay(String day) {this.day = day;}
 
+        public String getMonth() {return month;}
 
+        public void setMonth(String month) {this.month = month;}
+
+        public String getYear() {return year;}
+
+        public void setYear(String year) {this.year = year;}
+
+        public Boolean getHere() {return here;}
+
+        public void setHere(Boolean here) {this.here = here;}
 
 
 }
