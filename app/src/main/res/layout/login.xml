@@ -15,8 +15,10 @@
         android:textColor="@android:color/white"
         app:layout_constraintBottom_toTopOf="@+id/guideline18"
         app:layout_constraintEnd_toStartOf="@+id/guideline20"
+        app:layout_constraintHorizontal_bias="0.202"
         app:layout_constraintStart_toStartOf="@+id/guideline19"
-        app:layout_constraintTop_toTopOf="@+id/guideline17" />
+        app:layout_constraintTop_toTopOf="@+id/guideline17"
+        app:layout_constraintVertical_bias="0.959" />
 
     <EditText
         android:id="@+id/editText"
@@ -25,18 +27,22 @@
         android:text="Enter Password"
         app:layout_constraintBottom_toTopOf="@+id/guideline17"
         app:layout_constraintEnd_toStartOf="@+id/guideline13"
-        app:layout_constraintHorizontal_bias="0.326"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@+id/guideline19"
-        app:layout_constraintTop_toTopOf="@+id/guideline11" />
+        app:layout_constraintTop_toTopOf="@+id/guideline11"
+        app:layout_constraintVertical_bias="0.444" />
 
     <Spinner
         android:id="@+id/usernamesSpinner"
         android:layout_width="403dp"
         android:layout_height="21dp"
+        android:textAlignment="center"
         app:layout_constraintBottom_toTopOf="@+id/guideline11"
         app:layout_constraintEnd_toStartOf="@+id/guideline15"
-        app:layout_constraintStart_toStartOf="@+id/guideline16"
-        app:layout_constraintTop_toTopOf="@+id/guideline9" />
+        app:layout_constraintHorizontal_bias="0.438"
+        app:layout_constraintStart_toStartOf="@+id/guideline19"
+        app:layout_constraintTop_toTopOf="@+id/guideline9"
+        app:layout_constraintVertical_bias="0.589" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline9"
@@ -96,7 +102,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_begin="65dp" />
+        app:layout_constraintGuide_percent="0.15815085" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline20"

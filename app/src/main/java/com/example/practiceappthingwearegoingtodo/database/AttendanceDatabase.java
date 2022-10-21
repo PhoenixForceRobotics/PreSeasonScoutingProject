@@ -13,7 +13,7 @@ import com.example.practiceappthingwearegoingtodo.database.entities.Attendance;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
-@Database(entities = {Attendance.class} , version = 1, exportSchema = false)
+@Database(entities = {Attendance.class} , version = 2, exportSchema = false)
 public abstract class AttendanceDatabase extends RoomDatabase{
 
     private static volatile AttendanceDatabase INSTANCE;

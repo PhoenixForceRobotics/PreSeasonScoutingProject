@@ -40,28 +40,23 @@ public class Login extends AppCompatActivity {
 
         users = findViewById(R.id.usernamesSpinner);
         password = findViewById(R.id.editText);
-        submit = findViewById(R.id.button);
+        submit = findViewById(R.id.submit);
 
         //creates passwords and users
         addUsersPasswords();
-
-
-        submit.setOnClickListener(new View.OnClickListener() {
-
-            @Override
-            public void onClick(View v) {
-
-                validateUser();
-
-
-            }
-
-        });
-
         usernames.add(0,"Select user");
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_dropdown_item, usernames);
         //set the spinners adapter to the previously created one.
         users.setAdapter(adapter);
+
+        submit.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) { validateUser(); }
+
+        });
+
+
     }
 
 
@@ -72,17 +67,19 @@ public class Login extends AppCompatActivity {
 
 
             enteredPass = password.getText().toString();
+            Log.d("Get Password:", "Password Recieved");
             user = users.getSelectedItem().toString();
+            Log.d("Get users:", "Users Recieved");
             //navigates either way also fix for
-            Log.d("passwords:", passwords.get(0));
-            Log.d("Username", usernames.get(0));
-            Log.d("EnteredUsername", user);
-            Log.d("EnteredPass", enteredPass);
+           // Log.d("passwords:", passwords.get(0));
+            //Log.d("Username", usernames.get(0));
+            //Log.d("EnteredUsername", user);
+           // Log.d("EnteredPass", enteredPass);
             //find entered user in database dont need to check if exists then
 
 
             enteredPass = passwords.get(i);
-
+            Log.d("Entered Pass:", "Entered pass log");
             //Integer.parse int somehow works -lord andrews fault
             if (Integer.parseInt(enteredPass) == Integer.parseInt(String.valueOf(passwords.get(i)))) {
                 correct = true;
