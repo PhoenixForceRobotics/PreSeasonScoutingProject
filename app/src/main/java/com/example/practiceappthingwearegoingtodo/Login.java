@@ -54,6 +54,7 @@ public class Login extends AppCompatActivity {
             @Override
             public void onClick(View v) { validateUser(); }
 
+
         });
 
 
@@ -106,8 +107,8 @@ public class Login extends AppCompatActivity {
         usernames.add("Noam Sorlie");
         usernames.add("Gabriel Adams");
         usernames.add("Syed Ali");
-        usernames.add("Conner ???");
-        usernames.add("Malia ???");
+        usernames.add("Conor Ryan-Weseman");
+        usernames.add("Malia tuli");
 
 
         passwords.add("6969");
