@@ -93,12 +93,9 @@ public class Login extends AppCompatActivity {
 
     }
     public void mainPage() {
-        Log.d("login", "saveuser ran");
 
-        Intent intent = new Intent(this, MainActivity.class);
+        Intent intent = new Intent(this, MainPage.class);
         startActivity(intent);
-
-
     }
     public void addUsersPasswords()  {
         Log.d("login", "added passwords and users ran");
