@@ -45,8 +45,8 @@ public class Login extends AppCompatActivity {
         //creates passwords and users
         addUsersPasswords();
         usernames.add(0,"Select user");
+
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_dropdown_item, usernames);
-        //set the spinners adapter to the previously created one.
         users.setAdapter(adapter);
 
         submit.setOnClickListener(new View.OnClickListener() {
@@ -78,13 +78,13 @@ public class Login extends AppCompatActivity {
             //find entered user in database dont need to check if exists then
 
 
-            enteredPass = passwords.get(i);
+           // enteredPass = passwords.get(i);
             Log.d("Entered Pass:", "Entered pass log");
             //Integer.parse int somehow works -lord andrews fault
-            if (Integer.parseInt(enteredPass) == Integer.parseInt(String.valueOf(passwords.get(i)))) {
-                correct = true;
-                Log.d("made it here", user);
-                mainPage();
+                if (Integer.parseInt(enteredPass) == Integer.parseInt(String.valueOf(passwords.get(i)))) {
+                    correct = true;
+                    Log.d("made it here", user);
+                    mainPage();
 
 
             }
