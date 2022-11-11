@@ -106,8 +106,8 @@ public class Login extends AppCompatActivity {
         usernames.add("Noam Sorlie");
         usernames.add("Gabriel Adams");
         usernames.add("Syed Ali");
-        usernames.add("Conner ???");
-        usernames.add("Malia ???");
+        usernames.add("Conor Ryan-Weseman");
+        usernames.add("Malia Tuli");
 
 
         passwords.add("6969");
